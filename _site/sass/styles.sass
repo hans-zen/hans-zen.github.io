@@ -1,0 +1,108 @@
+@import compass
+@import compass/reset
+@import index
+@import _units
+
+html, body
+	font-family: $sans
+
+a
+	text-decoration: none
+
+.site
+	+center(1000px)
+
+.header
+	+col(1)
+	padding: 20px 0px 20px 10px
+
+	.extra
+		font-size: 2em
+		color: $gray
+
+	.extra:visited
+		color: $gray
+	.blink
+		color: $gray
+		animation: blink 1s steps(5, start) infinite
+		-webkit-animation: blink 1s steps(5, start) infinite
+
+	@keyframes blink
+		to
+			opacity: 0.1
+
+
+	@-webkit-keyframes blink
+		to
+			opacity: 0.1
+
+#home
+	h1
+		font-size: 2.5em
+		text-align: center
+	.posts
+		margin-top: $space*2
+		font-size: 1.3em
+		
+		li
+			padding: 30px
+		li:hover
+			text-decoration: underline
+		li:hover span
+			color: lighten($gray, 10%)
+		li span
+			color: lighten($gray, 30%)
+		li a
+			font-weight: 800
+			color: lighten($gray, 30%)
+		li:hover a
+			color: $gray
+
+.footer
+	color: $gray
+	.contact
+		padding: 20px 0px 20px 10px
+	.contact a
+		color: lighten($gray, 20%)
+	.contact a:hover
+		color: $gray
+		font-weight: 800
+
+.postitle
+	font-size: 2em
+	color: $gray
+	text-align: center
+.meta
+	text-align: center
+	margin-top: $space/5
+	color: lighten($gray, 20%)
+
+.post
+	p
+		font-size: 1.1em
+		line-height: 140%
+		color: $gray
+		padding: 20px
+
+	code
+		border: 1px solid #ddd
+		background-color: #eef
+		padding: 0 .2em
+
+	pre code
+		border: none
+
+	pre.terminal 
+		border: 1px solid #000
+		background-color: #333
+		color: #FFF
+	pre.terminal code
+		background-color: #333
+	.highlight
+		+center(500px)
+		padding: 20px
+	a
+		color: $primary
+	img
+		max-width: 100%
+		text-align: center
