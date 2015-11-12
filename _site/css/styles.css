@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -210,17 +211,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   clear: both;
 }
 
-/* line 6, ../sass/styles.sass */
+/* line 7, ../sass/styles.sass */
 html, body {
   font-family: Helvetica, Arial, Sans-serif;
 }
 
-/* line 9, ../sass/styles.sass */
+/* line 10, ../sass/styles.sass */
 a {
   text-decoration: none;
 }
 
-/* line 12, ../sass/styles.sass */
+/* line 13, ../sass/styles.sass */
 .site {
   *zoom: 1;
   width: auto;
@@ -242,7 +243,7 @@ a {
   clear: both;
 }
 
-/* line 15, ../sass/styles.sass */
+/* line 16, ../sass/styles.sass */
 .header {
   *zoom: 1;
   float: left;
@@ -266,17 +267,37 @@ a {
 .header:last-child {
   margin-right: 0%;
 }
-/* line 19, ../sass/styles.sass */
+/* line 20, ../sass/styles.sass */
 .header .extra {
-  font-size: 2em;
+  font-size: 19px;
+  font-family: "Inconsolata";
+  letter-spacing: 3px;
+  text-transform: lowercase;
   color: #4C4D4D;
 }
-/* line 23, ../sass/styles.sass */
+/* line 27, ../sass/styles.sass */
 .header .extra:visited {
   color: #4C4D4D;
 }
-/* line 25, ../sass/styles.sass */
+/* line 29, ../sass/styles.sass */
 .header .blink {
+  color: #4C4D4D;
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+/* line 33, ../sass/styles.sass */
+.header .postdir {
+  font-size: 17px;
+  font-family: "Inconsolata";
+  letter-spacing: 3px;
+  text-transform: lowercase;
+}
+/* line 38, ../sass/styles.sass */
+.header .blinkscript {
+  font-size: 17px;
+  font-family: "Inconsolata";
+  letter-spacing: 3px;
+  text-transform: lowercase;
   color: #4C4D4D;
   animation: blink 1s steps(5, start) infinite;
   -webkit-animation: blink 1s steps(5, start) infinite;
@@ -291,102 +312,102 @@ a {
     opacity: 0.1;
   }
 }
-/* line 40, ../sass/styles.sass */
+/* line 57, ../sass/styles.sass */
 #home h1 {
   font-size: 2.5em;
   text-align: center;
 }
-/* line 43, ../sass/styles.sass */
+/* line 60, ../sass/styles.sass */
 #home .posts {
   margin-top: 100px;
   font-size: 1.3em;
 }
-/* line 47, ../sass/styles.sass */
+/* line 64, ../sass/styles.sass */
 #home .posts li {
   padding: 30px;
 }
-/* line 49, ../sass/styles.sass */
+/* line 66, ../sass/styles.sass */
 #home .posts li:hover {
   text-decoration: underline;
 }
-/* line 51, ../sass/styles.sass */
+/* line 68, ../sass/styles.sass */
 #home .posts li:hover span {
   color: #656767;
 }
-/* line 53, ../sass/styles.sass */
+/* line 70, ../sass/styles.sass */
 #home .posts li span {
   color: #989a9a;
 }
-/* line 55, ../sass/styles.sass */
+/* line 72, ../sass/styles.sass */
 #home .posts li a {
   font-weight: 800;
   color: #989a9a;
 }
-/* line 58, ../sass/styles.sass */
+/* line 75, ../sass/styles.sass */
 #home .posts li:hover a {
   color: #4C4D4D;
 }
 
-/* line 61, ../sass/styles.sass */
+/* line 78, ../sass/styles.sass */
 .footer {
   color: #4C4D4D;
 }
-/* line 63, ../sass/styles.sass */
+/* line 80, ../sass/styles.sass */
 .footer .contact {
   padding: 20px 0px 20px 10px;
 }
-/* line 65, ../sass/styles.sass */
+/* line 82, ../sass/styles.sass */
 .footer .contact a {
   color: #7f8080;
 }
-/* line 67, ../sass/styles.sass */
+/* line 84, ../sass/styles.sass */
 .footer .contact a:hover {
   color: #4C4D4D;
   font-weight: 800;
 }
 
-/* line 71, ../sass/styles.sass */
+/* line 88, ../sass/styles.sass */
 .postitle {
   font-size: 2em;
   color: #4C4D4D;
   text-align: center;
 }
 
-/* line 75, ../sass/styles.sass */
+/* line 92, ../sass/styles.sass */
 .meta {
   text-align: center;
   margin-top: 10px;
   color: #7f8080;
 }
 
-/* line 81, ../sass/styles.sass */
+/* line 98, ../sass/styles.sass */
 .post p {
   font-size: 1.1em;
   line-height: 140%;
   color: #4C4D4D;
   padding: 20px;
 }
-/* line 87, ../sass/styles.sass */
+/* line 104, ../sass/styles.sass */
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 0.2em;
 }
-/* line 92, ../sass/styles.sass */
+/* line 109, ../sass/styles.sass */
 .post pre code {
   border: none;
 }
-/* line 95, ../sass/styles.sass */
+/* line 112, ../sass/styles.sass */
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
 }
-/* line 99, ../sass/styles.sass */
+/* line 116, ../sass/styles.sass */
 .post pre.terminal code {
   background-color: #333;
 }
-/* line 101, ../sass/styles.sass */
+/* line 118, ../sass/styles.sass */
 .post .highlight {
   *zoom: 1;
   width: auto;
@@ -408,11 +429,11 @@ a {
 .post .highlight:after {
   clear: both;
 }
-/* line 104, ../sass/styles.sass */
+/* line 121, ../sass/styles.sass */
 .post a {
   color: #49A4B7;
 }
-/* line 106, ../sass/styles.sass */
+/* line 123, ../sass/styles.sass */
 .post img {
   max-width: 100%;
   text-align: center;

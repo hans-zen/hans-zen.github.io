@@ -2,6 +2,7 @@
 @import compass/reset
 @import index
 @import _units
+@import url('https://fonts.googleapis.com/css?family=Inconsolata')
 
 html, body
 	font-family: $sans
@@ -17,12 +18,28 @@ a
 	padding: 20px 0px 20px 10px
 
 	.extra
-		font-size: 2em
+		font-size: 19px
+		font-family: 'Inconsolata'
+		letter-spacing: 3px
+		text-transform: lowercase
 		color: $gray
 
 	.extra:visited
 		color: $gray
 	.blink
+		color: $gray
+		animation: blink 1s steps(5, start) infinite
+		-webkit-animation: blink 1s steps(5, start) infinite
+	.postdir
+		font-size: 17px
+		font-family: 'Inconsolata'
+		letter-spacing: 3px
+		text-transform: lowercase
+	.blinkscript
+		font-size: 17px
+		font-family: 'Inconsolata'
+		letter-spacing: 3px
+		text-transform: lowercase
 		color: $gray
 		animation: blink 1s steps(5, start) infinite
 		-webkit-animation: blink 1s steps(5, start) infinite
